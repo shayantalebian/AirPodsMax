@@ -1,0 +1,16 @@
+/*=============== HOME SECTION ===============*/
+@media only screen and (max-width: 1050px) {
+  nav__logo img {
+    width: 60px;
+  }
+  .home {
+    column-gap: 3rem;
+  }
+  .home__img {
+    width: 90%;
+  }
+  .header,
+  .main {
+    margin: 0rem 7rem;
+  }
+}
