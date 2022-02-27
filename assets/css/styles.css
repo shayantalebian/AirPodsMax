@@ -234,7 +234,7 @@ button {
 }
 
 /*=============== SPONSOR SECTION ===============*/
-.sponsors__section {
+.sponsor {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -244,4 +244,67 @@ button {
 
 .sponsors__img {
   width: 150px;
+}
+
+/*=============== SPECS SECTION ===============*/
+.specs__heading {
+  background: linear-gradient(hsl(210, 4%, 62%), hsl(0, 0%, 15%));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  font-weight: 600;
+  font-size: 4.2rem;
+}
+
+.specs {
+  margin: 9.6rem 4.2rem 9.6rem;
+}
+
+.specs__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 4.2rem;
+  gap: 3.2rem;
+}
+
+.specs__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  color: #fff;
+  gap: 2rem;
+}
+
+.feature__icon {
+  font-size: 3.6rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.arrow__icon {
+  font-size: 1.8rem;
+}
+
+.feature__heading {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.feature__btn {
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: #fff;
+  box-shadow: 1px 1px 5px rgba(192, 192, 192, 0.5);
+  display: flex;
+  align-items: center;
 }
