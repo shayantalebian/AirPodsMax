@@ -58,3 +58,13 @@ function scrollHeader() {
   else header.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
+
+/*=============== ADD ACTIVE CLASS TO SELECTED SECTION ===============*/
+let links = document.querySelectorAll(".nav__link");
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function () {
+    let current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
