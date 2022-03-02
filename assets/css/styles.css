@@ -45,15 +45,23 @@ button {
   cursor: pointer;
 }
 
+.scroll-header {
+  background-color: hsl(206, 4%, 6%);
+}
+
 /*=============== MAIN ===============*/
 .main {
   margin: 0 auto;
   max-width: 100rem;
 }
+
 /*=============== HEAD SECTION ===============*/
 .header {
   max-width: 100rem;
   margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav {
@@ -61,7 +69,6 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.6rem;
 }
 
 .nav__logo img {
