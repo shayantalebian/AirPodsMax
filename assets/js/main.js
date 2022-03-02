@@ -28,28 +28,6 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*=============== ADDING ACTION TO ARROW ICON ===============*/
-const arrow = document.querySelector(".feature__heading");
-const infos = document.querySelector(".feature__discription");
-const arrowUp = document.getElementById("arrow__up");
-const arrowDown = document.getElementById("arrow__down");
-
-arrow.addEventListener("click", function () {
-  if (arrowDown.classList.contains("hidden")) {
-    infos.classList.add("hidden");
-    arrowDown.classList.remove("hidden");
-    arrowUp.classList.add("hidden");
-  } else {
-    infos.classList.remove("hidden");
-    arrowDown.classList.add("hidden");
-    arrowUp.classList.remove("hidden");
-  }
-});
-
-if (arrowUp.classList.contains("hidden")) {
-  console.log("Sadge");
-}
-
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
   const header = document.getElementById("header");
