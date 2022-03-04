@@ -62,7 +62,7 @@ button {
 .object {
   width: 5px;
   height: 60px;
-  background-color: hsl(206, 4%, 6%);
+  background-color: #fff;
   margin: 0 5px;
   border-radius: 2px;
   animation: loading 0.8s infinite;
@@ -126,12 +126,13 @@ button {
 /* Styles for showing the object */
 .loader {
   position: fixed;
-  z-index: 99;
+  z-index: 101;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: whitesmoke;
+  background-color: hsl(206, 4%, 6%);
+
   display: flex;
   justify-content: center;
 }
