@@ -264,7 +264,7 @@ button {
 }
 
 .specs {
-  margin: 9.6rem 4.2rem 9.6rem;
+  margin: 9.6rem 4.2rem 4.2rem;
 }
 
 .specs__content {
@@ -277,16 +277,21 @@ button {
 .specs__texts {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   margin-top: 1.6rem;
   margin-bottom: 1.6rem;
   color: #fff;
-  gap: 3.2rem;
-  padding: 0 9.6rem;
+  gap: 4.2rem;
+  padding: 0 6.4rem;
+  font-size: 1.4rem;
+}
+
+.specs__texts li {
+  font-size: 1.2rem;
 }
 
 .align-end {
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 .feature__icon {
@@ -310,12 +315,18 @@ button {
   cursor: pointer;
 }
 
-.feature__btn {
-  border-radius: 50%;
-  border: none;
-  background: transparent;
-  color: #fff;
-  box-shadow: 1px 1px 5px rgba(192, 192, 192, 0.5);
+.specs__img {
+  width: 100%;
   display: flex;
   align-items: center;
+}
+
+.specs__feature {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.feature__discription {
+  margin-left: 1rem;
 }
