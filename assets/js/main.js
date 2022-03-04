@@ -1,3 +1,9 @@
+/*=============== CREATE LOADING FUNCTION ===============*/
+window.addEventListener("load", function () {
+  const loader = this.document.querySelector(".loader");
+  loader.className += " hidden";
+});
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
